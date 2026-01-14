@@ -1,0 +1,24 @@
+<section id="plans" class="plans">
+  <h2>Escolha seu plano</h2>
+
+  <div class="grid">
+    <div
+      class="card"
+      *ngFor="let plan of plans"
+      [class.highlight]="plan.highlight"
+    >
+      <h3>{{ plan.name }}</h3>
+      <p class="price">{{ plan.price }}</p>
+
+      <ul>
+        <li *ngFor="let feature of plan.features">
+          {{ feature }}
+        </li>
+      </ul>
+
+      <a href="#contact" class="cta">
+        Assinar
+      </a>
+    </div>
+  </div>
+</section>

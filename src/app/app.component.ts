@@ -2,13 +2,15 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from "./components/header/header.component";
 import { HeroComponent } from './components/hero/hero.component';
 import { BenefitsComponent } from './components/benefits/benefits.component';
+import { PlansComponent } from './components/plans/plans.component';
 
 @Component({
   selector: 'app-root',
   imports: [
     HeaderComponent,
     HeroComponent,
-    BenefitsComponent
+    BenefitsComponent,
+    PlansComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

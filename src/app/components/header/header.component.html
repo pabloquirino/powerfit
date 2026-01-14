@@ -1,0 +1,15 @@
+<header class="header">
+  <div class="container">
+    <h1 class="logo">Power<span>Fit</span></h1>
+
+    <button class="menu-btn" (click)="toggleMenu()">
+      ☰
+    </button>
+
+    <nav [class.open]="isMenuOpen">
+      <a href="#benefits" (click)="toggleMenu()">Benefícios</a>
+      <a href="#plans" (click)="toggleMenu()">Planos</a>
+      <a href="#contact" (click)="toggleMenu()">Contato</a>
+    </nav>
+  </div>
+</header>

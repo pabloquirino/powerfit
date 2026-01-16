@@ -3,6 +3,8 @@ import { HeaderComponent } from "./components/header/header.component";
 import { HeroComponent } from './components/hero/hero.component';
 import { BenefitsComponent } from './components/benefits/benefits.component';
 import { PlansComponent } from './components/plans/plans.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +12,9 @@ import { PlansComponent } from './components/plans/plans.component';
     HeaderComponent,
     HeroComponent,
     BenefitsComponent,
-    PlansComponent
+    PlansComponent,
+    ContactComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

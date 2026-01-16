@@ -1,0 +1,35 @@
+<section class="contact">
+  <h2>Entre em contato</h2>
+  <p>Quer treinar com a PowerFit? Envie uma mensagem.</p>
+
+  <form [formGroup]="contactForm" (ngSubmit)="submit()">
+
+    <input type="text" placeholder="Seu nome" formControlName="name" />
+    <small class="error" *ngIf="hasError('name', 'required')">
+      Nome é obrigatório
+    </small>
+
+    <input type="email" placeholder="Seu e-mail" formControlName="email" />
+    <small class="error" *ngIf="hasError('email', 'required')">
+      E-mail é obrigatório
+    </small>
+    <small class="error" *ngIf="hasError('email', 'email')">
+      E-mail inválido
+    </small>
+
+    <textarea rows="4" placeholder="Sua mensagem" formControlName="message"></textarea>
+    <small class="error" *ngIf="hasError('message', 'required')">
+      Mensagem é obrigatória
+    </small>
+
+    <button type="submit" [disabled]="contactForm.invalid">
+      Enviar mensagem
+    </button>
+
+    <span *ngIf="submitted" class="success">
+      Mensagem enviada com sucesso!
+    </span>
+
+  </form>
+
+</section>

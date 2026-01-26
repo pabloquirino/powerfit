@@ -24,4 +24,5 @@ Este projeto foi criado com o objetivo de **estudo e portfólio**, aplicando boa
 
 ## 🖼️ Preview
 
-
+![demonstração da powerfit](/public/assets/powerfit.png)
+![demonstração da powerfit](/public/assets/powerfit-mobile.png)
